@@ -8,202 +8,391 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Floating Elements -->
-    <div class="floating-elements">
-        <div class="float-item circle-1"></div>
-        <div class="float-item square-1"></div>
-        <div class="float-item triangle-1"></div>
-        <div class="float-item circle-2"></div>
-        <div class="float-item square-2"></div>
-        <div class="float-item triangle-2"></div>
+    <div class="cursor"></div>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="logo-animation">
+                <div class="logo-part"></div>
+            </div>
+            <p>Carregando...</p>
+        </div>
     </div>
 
-    <!-- Header Section -->
     <header class="header">
-        <div class="header-content">
-            <div class="logo-container">
-                <div class="logo-badge">Inovação</div>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon"></span>
                 <h1>PowerApps</h1>
             </div>
-            <p class="header-subtitle">Transforme ideias em soluções sem código complexo</p>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                    <li><a href="#funcionamento" class="nav-link">Como Funciona</a></li>
+                    <li><a href="#integracao" class="nav-link">Integração</a></li>
+                    <li><a href="#contato" class="nav-link button-primary">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="glass-card">
-            <div class="card-badge">Microsoft</div>
-            <h2>O que é o PowerApps?</h2>
-            <p>O PowerApps é uma ferramenta de desenvolvimento low-code que permite criar aplicações empresariais para web e dispositivos móveis. Ele possibilita que desenvolvedores criem soluções escaláveis e eficientes com pouca ou nenhuma codificação.</p>
-            
-            <div class="features">
-                <div class="feature">
-                    <div class="feature-icon dev-icon"></div>
-                    <div class="feature-text">
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">Transformação Digital</div>
+                    <h1>PowerApps no Bradesco</h1>
+                    <p>Transforme ideias em soluções sem código complexo</p>
+                    <div class="hero-buttons">
+                        <a href="#saiba-mais" class="button-primary">Saiba Mais</a>
+                        <a href="#demonstracao" class="button-secondary">Ver Demonstração</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-inner">
+                        <div class="floating-elements">
+                            <div class="floating-element fe-1"></div>
+                            <div class="floating-element fe-2"></div>
+                            <div class="floating-element fe-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave"></div>
+        </section>
+
+        <section id="sobre" class="section-what">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">Inovação</div>
+                    <h2>O que é o PowerApps?</h2>
+                    <p>O PowerApps é uma ferramenta de desenvolvimento low-code que permite criar aplicações empresariais para web e dispositivos móveis. Ele possibilita que desenvolvedores criem soluções escaláveis e eficientes com pouca ou nenhuma codificação.</p>
+                </div>
+                
+                <div class="feature-grid">
+                    <div class="feature-card reveal-animation">
+                        <div class="feature-icon icon-dev"></div>
                         <h3>Desenvolvimento Rápido</h3>
                         <p>Criação de aplicativos em poucos dias, com interface intuitiva e fácil de usar.</p>
                     </div>
-                </div>
-                
-                <div class="feature">
-                    <div class="feature-icon int-icon"></div>
-                    <div class="feature-text">
+                    <div class="feature-card reveal-animation" data-delay="200">
+                        <div class="feature-icon icon-integration"></div>
                         <h3>Integração Ampla</h3>
                         <p>Conecte-se a diversas fontes de dados e sistemas sem necessidade de desenvolvimento complexo.</p>
                     </div>
-                </div>
-                
-                <div class="feature">
-                    <div class="feature-icon access-icon"></div>
-                    <div class="feature-text">
+                    <div class="feature-card reveal-animation" data-delay="400">
+                        <div class="feature-icon icon-mobile"></div>
                         <h3>Acessibilidade Total</h3>
                         <p>Aplicações responsivas acessíveis de qualquer dispositivo, permitindo mobilidade e eficiência.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Bradesco Integration Section -->
-    <section class="bradesco-section">
-        <div class="section-header">
-            <div class="section-badge">Eficiência</div>
-            <h2>Automação e Eficiência no Bradesco</h2>
-        </div>
-        <p class="section-intro">O PowerApps pode revolucionar a forma como as equipes do Bradesco lidam com tarefas repetitivas e gerenciamento de informações.</p>
-        
-        <div class="benefits-container">
-            <div class="benefit-card">
-                <div class="benefit-icon"></div>
-                <h3>Agilidade no Desenvolvimento</h3>
-                <p>Aplicações que levariam semanas para serem desenvolvidas podem ser criadas em poucos dias.</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon"></div>
-                <h3>Redução de Custos</h3>
-                <p>Elimine processos manuais e automatize fluxos de trabalho internos.</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon"></div>
-                <h3>Flexibilidade</h3>
-                <p>Adapte os aplicativos conforme a necessidade do banco, sem grandes investimentos.</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon"></div>
-                <h3>Mobilidade</h3>
-                <p>Permita que os colaboradores acessem os aplicativos de qualquer dispositivo.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- How it Works Section -->
-    <section class="how-it-works">
-        <div class="section-header">
-            <div class="section-badge">Processo</div>
-            <h2>Como Funciona o PowerApps?</h2>
-        </div>
-        
-        <div class="process-steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Escolha um modelo</h3>
-                    <p>Inicie com templates prontos ou crie do zero</p>
+        <section id="beneficios" class="section-benefits">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">Eficiência</div>
+                    <h2>Automação e Eficiência no Bradesco</h2>
+                    <p>O PowerApps pode revolucionar a forma como as equipes do Bradesco lidam com tarefas repetitivas e gerenciamento de informações.</p>
+                </div>
+                
+                <div class="benefits-wrapper">
+                    <div class="benefits-list">
+                        <div class="benefit-item reveal-animation">
+                            <div class="benefit-icon"></div>
+                            <div class="benefit-content">
+                                <h3>Agilidade no Desenvolvimento</h3>
+                                <p>Aplicações que levariam semanas para serem desenvolvidas podem ser criadas em poucos dias.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item reveal-animation" data-delay="150">
+                            <div class="benefit-icon"></div>
+                            <div class="benefit-content">
+                                <h3>Redução de Custos</h3>
+                                <p>Elimine processos manuais e automatize fluxos de trabalho internos.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item reveal-animation" data-delay="300">
+                            <div class="benefit-icon"></div>
+                            <div class="benefit-content">
+                                <h3>Flexibilidade</h3>
+                                <p>Adapte os aplicativos conforme a necessidade do banco, sem grandes investimentos.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item reveal-animation" data-delay="450">
+                            <div class="benefit-icon"></div>
+                            <div class="benefit-content">
+                                <h3>Mobilidade</h3>
+                                <p>Permita que os colaboradores acessem os aplicativos de qualquer dispositivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits-image reveal-animation" data-delay="300">
+                        <div class="benefits-image-inner">
+                            <div class="benefits-shapes">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                                <div class="shape shape-3"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Conecte suas fontes</h3>
-                    <p>Integre com SQL, SharePoint ou Dataverse</p>
-                </div>
-            </div>
-            
-            <div class="step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Crie a interface</h3>
-                    <p>Design intuitivo com arrastar e soltar</p>
-                </div>
-            </div>
-            
-            <div class="step">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3>Defina automações</h3>
-                    <p>Configure regras e fluxos de trabalho</p>
-                </div>
-            </div>
-            
-            <div class="step">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h3>Publique e compartilhe</h3>
-                    <p>Disponibilize para sua equipe</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Integration Section -->
-    <section class="integration-section">
-        <div class="section-header">
-            <div class="section-badge">Conectividade</div>
-            <h2>Integração com Ferramentas do Bradesco</h2>
-        </div>
-        
-        <div class="connectors">
-            <div class="connector-card">
-                <div class="connector-icon dataverse"></div>
-                <h3>Microsoft Dataverse</h3>
-                <p>Armazene e gerencie dados estruturados com segurança</p>
-            </div>
-            
-            <div class="connector-card">
-                <div class="connector-icon sql"></div>
-                <h3>SQL Server</h3>
-                <p>Acesse bases de dados corporativas para análise</p>
-            </div>
-            
-            <div class="connector-card">
-                <div class="connector-icon sharepoint"></div>
-                <h3>SharePoint</h3>
-                <p>Utilize listas para organizar informações</p>
-            </div>
-            
-            <div class="connector-card">
-                <div class="connector-icon m365"></div>
-                <h3>Microsoft 365</h3>
-                <p>Integre com Outlook, Teams e OneDrive</p>
-            </div>
-            
-            <div class="connector-card">
-                <div class="connector-icon powerbi"></div>
-                <h3>Power BI</h3>
-                <p>Crie dashboards interativos nos aplicativos</p>
-            </div>
-        </div>
-    </section>
+        <section id="funcionamento" class="section-how">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">Processo</div>
+                    <h2>Como Funciona o PowerApps?</h2>
+                    <p>O PowerApps permite criar aplicativos utilizando uma interface de arrastar e soltar, além de suporte a fórmulas para personalização avançada.</p>
+                </div>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="glass-card cta-card">
-            <h2>Transforme o Bradesco com PowerApps</h2>
-            <p>Comece agora a explorar essa tecnologia e transforme a forma como a sua equipe trabalha!</p>
-            <a href="#" class="cta-button">Iniciar Jornada</a>
-        </div>
-    </section>
+                <div class="process-steps">
+                    <div class="process-step reveal-animation">
+                        <div class="step-icon icon-template"></div>
+                        <div class="step-content">
+                            <h3>Escolha um modelo</h3>
+                            <p>Inicie com templates prontos ou crie do zero, conforme a necessidade do seu projeto.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal-animation" data-delay="200">
+                        <div class="step-icon icon-connect"></div>
+                        <div class="step-content">
+                            <h3>Conecte suas fontes</h3>
+                            <p>Integre com SQL, SharePoint ou Dataverse para acessar e gerenciar seus dados corporativos.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal-animation" data-delay="400">
+                        <div class="step-icon icon-design"></div>
+                        <div class="step-content">
+                            <h3>Crie a interface</h3>
+                            <p>Design intuitivo com arrastar e soltar, personalizando conforme as necessidades do Bradesco.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal-animation" data-delay="600">
+                        <div class="step-icon icon-automate"></div>
+                        <div class="step-content">
+                            <h3>Defina automações</h3>
+                            <p>Configure regras e fluxos de trabalho para tornar seu aplicativo inteligente e eficiente.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal-animation" data-delay="800">
+                        <div class="step-icon icon-publish"></div>
+                        <div class="step-content">
+                            <h3>Publique e compartilhe</h3>
+                            <p>Disponibilize o aplicativo para sua equipe, controlando permissões e acessos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
+        <section id="integracao" class="section-integration">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">Conectividade</div>
+                    <h2>Integração com Ferramentas do Bradesco</h2>
+                    <p>O PowerApps se conecta facilmente às ferramentas e sistemas utilizados pelo Bradesco, permitindo automação e eficiência operacional.</p>
+                </div>
+                
+                <div class="integration-grid">
+                    <div class="integration-card reveal-animation">
+                        <div class="integration-icon icon-dataverse"></div>
+                        <h3>Microsoft Dataverse</h3>
+                        <p>Armazene e gerencie dados estruturados com segurança corporativa.</p>
+                    </div>
+                    <div class="integration-card reveal-animation" data-delay="200">
+                        <div class="integration-icon icon-sql"></div>
+                        <h3>SQL Server</h3>
+                        <p>Acesse bases de dados corporativas para análise e operações bancárias.</p>
+                    </div>
+                    <div class="integration-card reveal-animation" data-delay="400">
+                        <div class="integration-icon icon-sharepoint"></div>
+                        <h3>SharePoint</h3>
+                        <p>Utilize listas para organizar informações de forma acessível e segura.</p>
+                    </div>
+                    <div class="integration-card reveal-animation" data-delay="600">
+                        <div class="integration-icon icon-m365"></div>
+                        <h3>Microsoft 365</h3>
+                        <p>Integre com Outlook, Teams e OneDrive para comunicação eficiente.</p>
+                    </div>
+                    <div class="integration-card reveal-animation" data-delay="800">
+                        <div class="integration-icon icon-powerbi"></div>
+                        <h3>Power BI</h3>
+                        <p>Crie dashboards interativos para visualização de dados bancários.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section-contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-content reveal-animation">
+                        <div class="badge">Entre em Contato</div>
+                        <h2>Transforme o Bradesco com PowerApps</h2>
+                        <p>Comece agora a explorar essa tecnologia e transforme a forma como a sua equipe trabalha!</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon icon-email"></div>
+                                <p>contato@powerapps.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon icon-phone"></div>
+                                <p>(11) 1234-5678</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container reveal-animation" data-delay="200">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" placeholder="Seu nome completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="seu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" placeholder="Como podemos ajudar?"></textarea>
+                            </div>
+                            <button type="submit" class="button-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <p>Apresentação para o Bradesco &copy; 2023</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-icon"></span>
+                    <h3>PowerApps</h3>
+                </div>
+                <div class="footer-navigation">
+                    <div class="footer-nav-column">
+                        <h4>Sobre</h4>
+                        <ul>
+                            <li><a href="#sobre">O que é</a></li>
+                            <li><a href="#beneficios">Benefícios</a></li>
+                            <li><a href="#funcionamento">Como funciona</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">Tutoriais</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="#contato">Suporte</a></li>
+                            <li><a href="#contato">Vendas</a></li>
+                            <li><a href="#contato">Parceiros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PowerApps | Microsoft Corporation. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon icon-linkedin"></a>
+                    <a href="#" class="social-icon icon-twitter"></a>
+                    <a href="#" class="social-icon icon-facebook"></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Loader Animation
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader');
+            setTimeout(() => {
+                loader.classList.add('loaded');
+            }, 1500);
+        });
+
+        // Reveal Animations
+        const revealElements = document.querySelectorAll('.reveal-animation');
+        
+        const revealAnimation = () => {
+            const windowHeight = window.innerHeight;
+            
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealAnimation);
+        window.addEventListener('load', revealAnimation);
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+        
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('click');
+            setTimeout(() => {
+                cursor.classList.remove('click');
+            }, 500);
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const target = document.querySelector(targetId);
+                if (target) {
+                    // Close mobile menu if open
+                    menuToggle.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    
+                    window.scrollTo({
+                        top: target.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
